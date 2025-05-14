@@ -46,9 +46,6 @@
             this.radioButton_Male = new System.Windows.Forms.RadioButton();
             this.radioButton_Female = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button_Add = new System.Windows.Forms.Button();
-            this.button_update = new System.Windows.Forms.Button();
-            this.button_Delete = new System.Windows.Forms.Button();
             this.animalIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.speciesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,7 +55,11 @@
             this.penIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.animalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.quanLyChanNuoi1DataSet = new QuanLyChanNuoi.QuanLyChanNuoi1DataSet();
+            this.button_Add = new System.Windows.Forms.Button();
+            this.button_update = new System.Windows.Forms.Button();
+            this.button_Delete = new System.Windows.Forms.Button();
             this.animalTableAdapter = new QuanLyChanNuoi.QuanLyChanNuoi1DataSetTableAdapters.AnimalTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyChanNuoi1DataSet)).BeginInit();
@@ -219,34 +220,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(776, 126);
             this.dataGridView1.TabIndex = 16;
             // 
-            // button_Add
-            // 
-            this.button_Add.Location = new System.Drawing.Point(187, 210);
-            this.button_Add.Name = "button_Add";
-            this.button_Add.Size = new System.Drawing.Size(75, 23);
-            this.button_Add.TabIndex = 17;
-            this.button_Add.Text = "Add";
-            this.button_Add.UseVisualStyleBackColor = true;
-            this.button_Add.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button_update
-            // 
-            this.button_update.Location = new System.Drawing.Point(312, 210);
-            this.button_update.Name = "button_update";
-            this.button_update.Size = new System.Drawing.Size(75, 23);
-            this.button_update.TabIndex = 18;
-            this.button_update.Text = "Update";
-            this.button_update.UseVisualStyleBackColor = true;
-            // 
-            // button_Delete
-            // 
-            this.button_Delete.Location = new System.Drawing.Point(423, 210);
-            this.button_Delete.Name = "button_Delete";
-            this.button_Delete.Size = new System.Drawing.Size(75, 23);
-            this.button_Delete.TabIndex = 19;
-            this.button_Delete.Text = "Delete";
-            this.button_Delete.UseVisualStyleBackColor = true;
-            // 
             // animalIDDataGridViewTextBoxColumn
             // 
             this.animalIDDataGridViewTextBoxColumn.DataPropertyName = "AnimalID";
@@ -314,15 +287,53 @@
             this.quanLyChanNuoi1DataSet.DataSetName = "QuanLyChanNuoi1DataSet";
             this.quanLyChanNuoi1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // button_Add
+            // 
+            this.button_Add.Location = new System.Drawing.Point(187, 210);
+            this.button_Add.Name = "button_Add";
+            this.button_Add.Size = new System.Drawing.Size(75, 23);
+            this.button_Add.TabIndex = 17;
+            this.button_Add.Text = "Add";
+            this.button_Add.UseVisualStyleBackColor = true;
+            this.button_Add.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button_update
+            // 
+            this.button_update.Location = new System.Drawing.Point(312, 210);
+            this.button_update.Name = "button_update";
+            this.button_update.Size = new System.Drawing.Size(75, 23);
+            this.button_update.TabIndex = 18;
+            this.button_update.Text = "Update";
+            this.button_update.UseVisualStyleBackColor = true;
+            // 
+            // button_Delete
+            // 
+            this.button_Delete.Location = new System.Drawing.Point(423, 210);
+            this.button_Delete.Name = "button_Delete";
+            this.button_Delete.Size = new System.Drawing.Size(75, 23);
+            this.button_Delete.TabIndex = 19;
+            this.button_Delete.Text = "Delete";
+            this.button_Delete.UseVisualStyleBackColor = true;
+            // 
             // animalTableAdapter
             // 
             this.animalTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(539, 210);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Menu";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frm_Animal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_update);
             this.Controls.Add(this.button_Add);
@@ -386,6 +397,7 @@
         private System.Windows.Forms.Button button_Add;
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Button button_Delete;
+        private System.Windows.Forms.Button button1;
     }
 }
 
