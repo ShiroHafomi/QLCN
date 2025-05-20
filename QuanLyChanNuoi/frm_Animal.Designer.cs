@@ -42,7 +42,6 @@
             this.Species_Text = new System.Windows.Forms.TextBox();
             this.Breed = new System.Windows.Forms.TextBox();
             this.Weight = new System.Windows.Forms.TextBox();
-            this.PenID_Text = new System.Windows.Forms.TextBox();
             this.radioButton_Male = new System.Windows.Forms.RadioButton();
             this.radioButton_Female = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -60,9 +59,15 @@
             this.button_Delete = new System.Windows.Forms.Button();
             this.animalTableAdapter = new QuanLyChanNuoi.QuanLyChanNuoi1DataSetTableAdapters.AnimalTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.quanLyChanNuoi1DataSet1 = new QuanLyChanNuoi.QuanLyChanNuoi1DataSet1();
+            this.penBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.penTableAdapter = new QuanLyChanNuoi.QuanLyChanNuoi1DataSet1TableAdapters.PenTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyChanNuoi1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyChanNuoi1DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,13 +176,6 @@
             this.Weight.Size = new System.Drawing.Size(200, 22);
             this.Weight.TabIndex = 12;
             // 
-            // PenID_Text
-            // 
-            this.PenID_Text.Location = new System.Drawing.Point(573, 106);
-            this.PenID_Text.Name = "PenID_Text";
-            this.PenID_Text.Size = new System.Drawing.Size(200, 22);
-            this.PenID_Text.TabIndex = 13;
-            // 
             // radioButton_Male
             // 
             this.radioButton_Male.AutoSize = true;
@@ -188,6 +186,7 @@
             this.radioButton_Male.TabStop = true;
             this.radioButton_Male.Text = "Male";
             this.radioButton_Male.UseVisualStyleBackColor = true;
+            this.radioButton_Male.CheckedChanged += new System.EventHandler(this.radioButton_Male_CheckedChanged);
             // 
             // radioButton_Female
             // 
@@ -219,6 +218,8 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(776, 126);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // animalIDDataGridViewTextBoxColumn
             // 
@@ -305,6 +306,7 @@
             this.button_update.TabIndex = 18;
             this.button_update.Text = "Update";
             this.button_update.UseVisualStyleBackColor = true;
+            this.button_update.Click += new System.EventHandler(this.button_update_Click);
             // 
             // button_Delete
             // 
@@ -314,6 +316,7 @@
             this.button_Delete.TabIndex = 19;
             this.button_Delete.Text = "Delete";
             this.button_Delete.UseVisualStyleBackColor = true;
+            this.button_Delete.Click += new System.EventHandler(this.button_Delete_Click);
             // 
             // animalTableAdapter
             // 
@@ -328,11 +331,37 @@
             this.button1.Text = "Menu";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.penBindingSource;
+            this.comboBox1.DisplayMember = "PenID";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(573, 106);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(200, 24);
+            this.comboBox1.TabIndex = 21;
+            this.comboBox1.ValueMember = "PenID";
+            // 
+            // quanLyChanNuoi1DataSet1
+            // 
+            this.quanLyChanNuoi1DataSet1.DataSetName = "QuanLyChanNuoi1DataSet1";
+            this.quanLyChanNuoi1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // penBindingSource
+            // 
+            this.penBindingSource.DataMember = "Pen";
+            this.penBindingSource.DataSource = this.quanLyChanNuoi1DataSet1;
+            // 
+            // penTableAdapter
+            // 
+            this.penTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_Animal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Delete);
             this.Controls.Add(this.button_update);
@@ -340,7 +369,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.radioButton_Female);
             this.Controls.Add(this.radioButton_Male);
-            this.Controls.Add(this.PenID_Text);
             this.Controls.Add(this.Weight);
             this.Controls.Add(this.Breed);
             this.Controls.Add(this.Species_Text);
@@ -360,6 +388,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLyChanNuoi1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLyChanNuoi1DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.penBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -380,7 +410,6 @@
         private System.Windows.Forms.TextBox Species_Text;
         private System.Windows.Forms.TextBox Breed;
         private System.Windows.Forms.TextBox Weight;
-        private System.Windows.Forms.TextBox PenID_Text;
         private System.Windows.Forms.RadioButton radioButton_Male;
         private System.Windows.Forms.RadioButton radioButton_Female;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -398,6 +427,10 @@
         private System.Windows.Forms.Button button_update;
         private System.Windows.Forms.Button button_Delete;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private QuanLyChanNuoi1DataSet1 quanLyChanNuoi1DataSet1;
+        private System.Windows.Forms.BindingSource penBindingSource;
+        private QuanLyChanNuoi1DataSet1TableAdapters.PenTableAdapter penTableAdapter;
     }
 }
 
