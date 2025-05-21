@@ -36,7 +36,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -108,14 +108,14 @@
             this.textBox4.Size = new System.Drawing.Size(322, 22);
             this.textBox4.TabIndex = 7;
             // 
-            // button1
+            // button
             // 
-            this.button1.Location = new System.Drawing.Point(243, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button.Location = new System.Drawing.Point(243, 244);
+            this.button.Name = "button";
+            this.button.Size = new System.Drawing.Size(75, 23);
+            this.button.TabIndex = 8;
+            this.button.Text = "Add";
+            this.button.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -125,6 +125,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -163,7 +164,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -174,6 +175,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frm_Pen";
             this.Text = "frm_Pen";
+            this.Load += new System.EventHandler(this.frm_Pen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,7 +192,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView1;

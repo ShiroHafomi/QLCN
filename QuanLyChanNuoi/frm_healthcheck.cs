@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace QuanLyChanNuoi
 {
-    public partial class frm_Pen: Form
+    public partial class frm_healthcheck : Form
     {
-        public frm_Pen()
+        public frm_healthcheck()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void frm_Pen_Load(object sender, EventArgs e)
+        private void frm_healthcheck_Load(object sender, EventArgs e)
         {
 
         }

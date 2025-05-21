@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_CareLOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CareLOG.Designer.cs">
+      <DependentUpon>frm_CareLOG.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Animal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,23 @@
     <Compile Include="frm_FeedingSchedule.Designer.cs">
       <DependentUpon>frm_FeedingSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_healthcheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_healthcheck.Designer.cs">
+      <DependentUpon>frm_healthcheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Pen.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_Pen.Designer.cs">
       <DependentUpon>frm_Pen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Staff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Staff.Designer.cs">
+      <DependentUpon>frm_Staff.cs</DependentUpon>
     </Compile>
     <Compile Include="LOPDUNGCHUNG.cs" />
     <Compile Include="Menu.cs">
@@ -124,8 +142,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_QuanLyChanNuoi_Minn_DataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_QuanLyChanNuoi_TranThanhTri_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_QuanLyChanNuoi_TranThanhTri_DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_QuanLyChanNuoi_TranThanhTri_DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_QuanLyChanNuoi_TranThanhTri_DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_Animal.resx">
       <DependentUpon>frm_Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CareLOG.resx">
+      <DependentUpon>frm_CareLOG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Feed.resx">
       <DependentUpon>frm_Feed.cs</DependentUpon>
@@ -133,8 +174,14 @@
     <EmbeddedResource Include="frm_FeedingSchedule.resx">
       <DependentUpon>frm_FeedingSchedule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_healthcheck.resx">
+      <DependentUpon>frm_healthcheck.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Pen.resx">
       <DependentUpon>frm_Pen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Staff.resx">
+      <DependentUpon>frm_Staff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
@@ -223,6 +270,50 @@
     <None Include="_QuanLyChanNuoi_Minn_DataSet3.xss">
       <DependentUpon>_QuanLyChanNuoi_Minn_DataSet3.xsd</DependentUpon>
     </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet.xsc">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_TranThanhTri_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet.xss">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet1.xsc">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_TranThanhTri_DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet1.xss">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet2.xsc">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_TranThanhTri_DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet2.xss">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet3.xsc">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_TranThanhTri_DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_TranThanhTri_DataSet3.xss">
+      <DependentUpon>_QuanLyChanNuoi_TranThanhTri_DataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -234,6 +325,13 @@
     <Content Include="QuanLyChanNuoi%28Minn%29_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>QuanLyChanNuoi%28Minn%29.mdf</DependentUpon>
+    </Content>
+    <Content Include="QuanLyChanNuoi%28TranThanhTri%29.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QuanLyChanNuoi%28TranThanhTri%29_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>QuanLyChanNuoi%28TranThanhTri%29.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
