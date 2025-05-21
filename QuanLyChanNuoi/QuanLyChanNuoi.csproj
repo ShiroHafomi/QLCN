@@ -79,6 +79,12 @@
     <Compile Include="frm_FeedingSchedule.Designer.cs">
       <DependentUpon>frm_FeedingSchedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_healthcheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_healthcheck.Designer.cs">
+      <DependentUpon>frm_healthcheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Pen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_FeedingSchedule.resx">
       <DependentUpon>frm_FeedingSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_healthcheck.resx">
+      <DependentUpon>frm_healthcheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Pen.resx">
       <DependentUpon>frm_Pen.cs</DependentUpon>
