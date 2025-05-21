@@ -34,7 +34,7 @@ namespace QuanLyChanNuoi
                 return;
             }
             string gender = radioButton_Male.Checked ? "Male" : "Female";
-            string sql = "INSERT INTO Animal(Name, Species, Breed, Gender, Weight, PenID) " +"VALUES('" + Name_Text.Text + "','" + Species_Text.Text + "','" + Breed.Text + "','" + gender + "','" + Weight.Text + "','" + PenID_Text.Text + "')";
+            string sql = "INSERT INTO Animal(Name, Species, Breed, Gender, Weight, PenID) " +"VALUES('" + Name_Text.Text + "','" + Species_Text.Text + "','" + Breed.Text + "','" + gender + "','" + Weight.Text + "','" + cmb_PenID.Text + "')";
             int kq = lopchung.ChucNang(sql);
             if (kq > 0)
             {
@@ -61,7 +61,7 @@ namespace QuanLyChanNuoi
                 return;
             }
             string gender = radioButton_Male.Checked ? "Male" : "Female";
-            string sql = "UPDATE Animal SET Name = '" + Name_Text.Text + "', Species = '" + Species_Text.Text + "', Breed = '" + Breed.Text + "',Gender = '" + gender + "',Weight = '"+ Weight.Text + "', PenID = '"+ PenID_Text.Text + "'WHERE AnimalID = '" + AnimalID_Text.Text + "'";
+            string sql = "UPDATE Animal SET Name = '" + Name_Text.Text + "', Species = '" + Species_Text.Text + "', Breed = '" + Breed.Text + "',Gender = '" + gender + "',Weight = '"+ Weight.Text + "', PenID = '"+ cmb_PenID.Text + "'WHERE AnimalID = '" + AnimalID_Text.Text + "'";
             int kq = lopchung.ChucNang(sql);
             if (kq > 0)
             {
@@ -109,7 +109,7 @@ namespace QuanLyChanNuoi
             Species_Text.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             Breed.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             Weight.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-            PenID_Text.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+            cmb_PenID.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
 
         }
     }
