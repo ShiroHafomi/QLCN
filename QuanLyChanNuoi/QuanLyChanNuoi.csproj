@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -67,6 +67,18 @@
     <Compile Include="frm_Animal.Designer.cs">
       <DependentUpon>frm_Animal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Feed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Feed.Designer.cs">
+      <DependentUpon>frm_Feed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_FeedingSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_FeedingSchedule.Designer.cs">
+      <DependentUpon>frm_FeedingSchedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Pen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,8 +104,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyChanNuoi1DataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_QuanLyChanNuoi_Minn_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_QuanLyChanNuoi_Minn_DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_QuanLyChanNuoi_Minn_DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_QuanLyChanNuoi_Minn_DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_Animal.resx">
       <DependentUpon>frm_Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Feed.resx">
+      <DependentUpon>frm_Feed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_FeedingSchedule.resx">
+      <DependentUpon>frm_FeedingSchedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Pen.resx">
       <DependentUpon>frm_Pen.cs</DependentUpon>
@@ -141,11 +179,62 @@
     <None Include="QuanLyChanNuoi1DataSet11.xss">
       <DependentUpon>QuanLyChanNuoi1DataSet11.xsd</DependentUpon>
     </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet.xsc">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_Minn_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet.xss">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet1.xsc">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_Minn_DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet1.xss">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet2.xsc">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_Minn_DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet2.xss">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet3.xsc">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_QuanLyChanNuoi_Minn_DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_QuanLyChanNuoi_Minn_DataSet3.xss">
+      <DependentUpon>_QuanLyChanNuoi_Minn_DataSet3.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="QuanLyChanNuoi%28Minn%29.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QuanLyChanNuoi%28Minn%29_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>QuanLyChanNuoi%28Minn%29.mdf</DependentUpon>
+    </Content>
     <Content Include="QuanLyChanNuoi1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
