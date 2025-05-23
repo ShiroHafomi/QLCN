@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PenID_Text = new System.Windows.Forms.TextBox();
+            this.Penname_text = new System.Windows.Forms.TextBox();
+            this.Capacity_text = new System.Windows.Forms.TextBox();
+            this.Location_text = new System.Windows.Forms.TextBox();
             this.button = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -80,33 +80,33 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Location";
             // 
-            // textBox1
+            // PenID_Text
             // 
-            this.textBox1.Location = new System.Drawing.Point(243, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(322, 22);
-            this.textBox1.TabIndex = 4;
+            this.PenID_Text.Location = new System.Drawing.Point(243, 36);
+            this.PenID_Text.Name = "PenID_Text";
+            this.PenID_Text.Size = new System.Drawing.Size(322, 22);
+            this.PenID_Text.TabIndex = 4;
             // 
-            // textBox2
+            // Penname_text
             // 
-            this.textBox2.Location = new System.Drawing.Point(243, 83);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(322, 22);
-            this.textBox2.TabIndex = 5;
+            this.Penname_text.Location = new System.Drawing.Point(243, 83);
+            this.Penname_text.Name = "Penname_text";
+            this.Penname_text.Size = new System.Drawing.Size(322, 22);
+            this.Penname_text.TabIndex = 5;
             // 
-            // textBox3
+            // Capacity_text
             // 
-            this.textBox3.Location = new System.Drawing.Point(243, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(322, 22);
-            this.textBox3.TabIndex = 6;
+            this.Capacity_text.Location = new System.Drawing.Point(243, 132);
+            this.Capacity_text.Name = "Capacity_text";
+            this.Capacity_text.Size = new System.Drawing.Size(322, 22);
+            this.Capacity_text.TabIndex = 6;
             // 
-            // textBox4
+            // Location_text
             // 
-            this.textBox4.Location = new System.Drawing.Point(243, 178);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(322, 22);
-            this.textBox4.TabIndex = 7;
+            this.Location_text.Location = new System.Drawing.Point(243, 178);
+            this.Location_text.Name = "Location_text";
+            this.Location_text.Size = new System.Drawing.Size(322, 22);
+            this.Location_text.TabIndex = 7;
             // 
             // button
             // 
@@ -116,6 +116,7 @@
             this.button.TabIndex = 8;
             this.button.Text = "Add";
             this.button.UseVisualStyleBackColor = true;
+            this.button.Click += new System.EventHandler(this.button_Click);
             // 
             // button2
             // 
@@ -135,6 +136,7 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // dataGridView1
             // 
@@ -145,6 +147,8 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(776, 138);
             this.dataGridView1.TabIndex = 11;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // button4
             // 
@@ -165,10 +169,10 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Location_text);
+            this.Controls.Add(this.Capacity_text);
+            this.Controls.Add(this.Penname_text);
+            this.Controls.Add(this.PenID_Text);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -188,10 +192,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PenID_Text;
+        private System.Windows.Forms.TextBox Penname_text;
+        private System.Windows.Forms.TextBox Capacity_text;
+        private System.Windows.Forms.TextBox Location_text;
         private System.Windows.Forms.Button button;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
