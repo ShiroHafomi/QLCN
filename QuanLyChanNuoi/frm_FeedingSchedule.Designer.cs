@@ -41,31 +41,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.DT_FeedTime = new System.Windows.Forms.DateTimePicker();
-            this.cmb_animalID = new System.Windows.Forms.ComboBox();
+            this.cmb_animalName = new System.Windows.Forms.ComboBox();
             this.animalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._QuanLyChanNuoi_Minn_DataSet1 = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSet1();
-            this.cmb_FeedID = new System.Windows.Forms.ComboBox();
+            this.cmb_FeedName = new System.Windows.Forms.ComboBox();
             this.feedBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._QuanLyChanNuoi_Minn_DataSet2 = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSet2();
-            this.animalTableAdapter = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSet1TableAdapters.AnimalTableAdapter();
-            this.feedTableAdapter = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSet2TableAdapters.FeedTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.scheduleIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.animalIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.feedIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.feedTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.feedingScheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._QuanLyChanNuoi_Minn_DataSet3 = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSet3();
-            this.feedingScheduleTableAdapter = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSet3TableAdapters.FeedingScheduleTableAdapter();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedingScheduleBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // Amount_Text
@@ -153,9 +139,9 @@
             this.label3.Location = new System.Drawing.Point(98, 149);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 43;
-            this.label3.Text = "Feed ID";
+            this.label3.Text = "Feed name";
             // 
             // label2
             // 
@@ -163,9 +149,9 @@
             this.label2.Location = new System.Drawing.Point(98, 116);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 42;
-            this.label2.Text = "Animal ID";
+            this.label2.Text = "Animal name";
             // 
             // label1
             // 
@@ -186,117 +172,60 @@
             this.DT_FeedTime.Size = new System.Drawing.Size(151, 20);
             this.DT_FeedTime.TabIndex = 55;
             // 
-            // cmb_animalID
+            // cmb_animalName
             // 
-            this.cmb_animalID.DataSource = this.animalBindingSource;
-            this.cmb_animalID.DisplayMember = "AnimalID";
-            this.cmb_animalID.FormattingEnabled = true;
-            this.cmb_animalID.Location = new System.Drawing.Point(200, 113);
-            this.cmb_animalID.Name = "cmb_animalID";
-            this.cmb_animalID.Size = new System.Drawing.Size(150, 21);
-            this.cmb_animalID.TabIndex = 56;
-            this.cmb_animalID.ValueMember = "Name";
+            this.cmb_animalName.FormattingEnabled = true;
+            this.cmb_animalName.Location = new System.Drawing.Point(200, 113);
+            this.cmb_animalName.Name = "cmb_animalName";
+            this.cmb_animalName.Size = new System.Drawing.Size(150, 21);
+            this.cmb_animalName.TabIndex = 56;
             // 
             // animalBindingSource
             // 
             this.animalBindingSource.DataMember = "Animal";
-            this.animalBindingSource.DataSource = this._QuanLyChanNuoi_Minn_DataSet1;
             // 
             // _QuanLyChanNuoi_Minn_DataSet1
             // 
-            this._QuanLyChanNuoi_Minn_DataSet1.DataSetName = "_QuanLyChanNuoi_Minn_DataSet1";
-            this._QuanLyChanNuoi_Minn_DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // cmb_FeedID
+            // cmb_FeedName
             // 
-            this.cmb_FeedID.DataSource = this.feedBindingSource;
-            this.cmb_FeedID.DisplayMember = "FeedID";
-            this.cmb_FeedID.FormattingEnabled = true;
-            this.cmb_FeedID.Location = new System.Drawing.Point(200, 146);
-            this.cmb_FeedID.Name = "cmb_FeedID";
-            this.cmb_FeedID.Size = new System.Drawing.Size(150, 21);
-            this.cmb_FeedID.TabIndex = 57;
-            this.cmb_FeedID.ValueMember = "FeedName";
+            this.cmb_FeedName.FormattingEnabled = true;
+            this.cmb_FeedName.Location = new System.Drawing.Point(200, 146);
+            this.cmb_FeedName.Name = "cmb_FeedName";
+            this.cmb_FeedName.Size = new System.Drawing.Size(150, 21);
+            this.cmb_FeedName.TabIndex = 57;
             // 
             // feedBindingSource
             // 
             this.feedBindingSource.DataMember = "Feed";
-            this.feedBindingSource.DataSource = this._QuanLyChanNuoi_Minn_DataSet2;
             // 
             // _QuanLyChanNuoi_Minn_DataSet2
             // 
-            this._QuanLyChanNuoi_Minn_DataSet2.DataSetName = "_QuanLyChanNuoi_Minn_DataSet2";
-            this._QuanLyChanNuoi_Minn_DataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // animalTableAdapter
             // 
-            this.animalTableAdapter.ClearBeforeFill = true;
             // 
             // feedTableAdapter
             // 
-            this.feedTableAdapter.ClearBeforeFill = true;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.scheduleIDDataGridViewTextBoxColumn,
-            this.animalIDDataGridViewTextBoxColumn,
-            this.feedIDDataGridViewTextBoxColumn,
-            this.feedTimeDataGridViewTextBoxColumn,
-            this.amountDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.feedingScheduleBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(112, 252);
+            this.dataGridView1.Location = new System.Drawing.Point(112, 253);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(554, 74);
+            this.dataGridView1.Size = new System.Drawing.Size(551, 73);
             this.dataGridView1.TabIndex = 58;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // scheduleIDDataGridViewTextBoxColumn
-            // 
-            this.scheduleIDDataGridViewTextBoxColumn.DataPropertyName = "ScheduleID";
-            this.scheduleIDDataGridViewTextBoxColumn.HeaderText = "ScheduleID";
-            this.scheduleIDDataGridViewTextBoxColumn.Name = "scheduleIDDataGridViewTextBoxColumn";
-            this.scheduleIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // animalIDDataGridViewTextBoxColumn
-            // 
-            this.animalIDDataGridViewTextBoxColumn.DataPropertyName = "AnimalID";
-            this.animalIDDataGridViewTextBoxColumn.HeaderText = "AnimalID";
-            this.animalIDDataGridViewTextBoxColumn.Name = "animalIDDataGridViewTextBoxColumn";
-            // 
-            // feedIDDataGridViewTextBoxColumn
-            // 
-            this.feedIDDataGridViewTextBoxColumn.DataPropertyName = "FeedID";
-            this.feedIDDataGridViewTextBoxColumn.HeaderText = "FeedID";
-            this.feedIDDataGridViewTextBoxColumn.Name = "feedIDDataGridViewTextBoxColumn";
-            // 
-            // feedTimeDataGridViewTextBoxColumn
-            // 
-            this.feedTimeDataGridViewTextBoxColumn.DataPropertyName = "FeedTime";
-            this.feedTimeDataGridViewTextBoxColumn.HeaderText = "FeedTime";
-            this.feedTimeDataGridViewTextBoxColumn.Name = "feedTimeDataGridViewTextBoxColumn";
-            // 
-            // amountDataGridViewTextBoxColumn
-            // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
             // 
             // feedingScheduleBindingSource
             // 
             this.feedingScheduleBindingSource.DataMember = "FeedingSchedule";
-            this.feedingScheduleBindingSource.DataSource = this._QuanLyChanNuoi_Minn_DataSet3;
             // 
             // _QuanLyChanNuoi_Minn_DataSet3
             // 
-            this._QuanLyChanNuoi_Minn_DataSet3.DataSetName = "_QuanLyChanNuoi_Minn_DataSet3";
-            this._QuanLyChanNuoi_Minn_DataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // feedingScheduleTableAdapter
             // 
-            this.feedingScheduleTableAdapter.ClearBeforeFill = true;
             // 
             // label4
             // 
@@ -313,11 +242,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(759, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cmb_FeedID);
-            this.Controls.Add(this.cmb_animalID);
+            this.Controls.Add(this.cmb_FeedName);
+            this.Controls.Add(this.cmb_animalName);
             this.Controls.Add(this.DT_FeedTime);
             this.Controls.Add(this.Amount_Text);
             this.Controls.Add(this.button_Menu);
@@ -334,12 +263,9 @@
             this.Text = "frm_FeedingSchedule";
             this.Load += new System.EventHandler(this.frm_FeedingSchedule_Load);
             ((System.ComponentModel.ISupportInitialize)(this.animalBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedingScheduleBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,23 +285,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker DT_FeedTime;
-        private System.Windows.Forms.ComboBox cmb_animalID;
-        private System.Windows.Forms.ComboBox cmb_FeedID;
-        private _QuanLyChanNuoi_Minn_DataSet1 _QuanLyChanNuoi_Minn_DataSet1;
+        private System.Windows.Forms.ComboBox cmb_animalName;
+        private System.Windows.Forms.ComboBox cmb_FeedName;
         private System.Windows.Forms.BindingSource animalBindingSource;
-        private _QuanLyChanNuoi_Minn_DataSet1TableAdapters.AnimalTableAdapter animalTableAdapter;
-        private _QuanLyChanNuoi_Minn_DataSet2 _QuanLyChanNuoi_Minn_DataSet2;
         private System.Windows.Forms.BindingSource feedBindingSource;
-        private _QuanLyChanNuoi_Minn_DataSet2TableAdapters.FeedTableAdapter feedTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private _QuanLyChanNuoi_Minn_DataSet3 _QuanLyChanNuoi_Minn_DataSet3;
         private System.Windows.Forms.BindingSource feedingScheduleBindingSource;
-        private _QuanLyChanNuoi_Minn_DataSet3TableAdapters.FeedingScheduleTableAdapter feedingScheduleTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scheduleIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn animalIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn feedIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn feedTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label4;
     }
 }

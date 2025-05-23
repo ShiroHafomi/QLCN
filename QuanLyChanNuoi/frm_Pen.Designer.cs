@@ -41,78 +41,88 @@
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 39);
+            this.label1.Location = new System.Drawing.Point(54, 66);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "PenID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 89);
+            this.label2.Location = new System.Drawing.Point(54, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 16);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "PenName";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 135);
+            this.label3.Location = new System.Drawing.Point(54, 144);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 16);
+            this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Capacity";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 178);
+            this.label4.Location = new System.Drawing.Point(54, 179);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 16);
+            this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Location";
             // 
             // PenID_Text
             // 
-            this.PenID_Text.Location = new System.Drawing.Point(243, 36);
+            this.PenID_Text.Location = new System.Drawing.Point(196, 63);
+            this.PenID_Text.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PenID_Text.Name = "PenID_Text";
-            this.PenID_Text.Size = new System.Drawing.Size(322, 22);
+            this.PenID_Text.Size = new System.Drawing.Size(242, 20);
             this.PenID_Text.TabIndex = 4;
             // 
             // Penname_text
             // 
-            this.Penname_text.Location = new System.Drawing.Point(243, 83);
+            this.Penname_text.Location = new System.Drawing.Point(196, 101);
+            this.Penname_text.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Penname_text.Name = "Penname_text";
-            this.Penname_text.Size = new System.Drawing.Size(322, 22);
+            this.Penname_text.Size = new System.Drawing.Size(242, 20);
             this.Penname_text.TabIndex = 5;
             // 
             // Capacity_text
             // 
-            this.Capacity_text.Location = new System.Drawing.Point(243, 132);
+            this.Capacity_text.Location = new System.Drawing.Point(196, 141);
+            this.Capacity_text.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Capacity_text.Name = "Capacity_text";
-            this.Capacity_text.Size = new System.Drawing.Size(322, 22);
+            this.Capacity_text.Size = new System.Drawing.Size(242, 20);
             this.Capacity_text.TabIndex = 6;
             // 
             // Location_text
             // 
-            this.Location_text.Location = new System.Drawing.Point(243, 178);
+            this.Location_text.Location = new System.Drawing.Point(196, 179);
+            this.Location_text.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Location_text.Name = "Location_text";
-            this.Location_text.Size = new System.Drawing.Size(322, 22);
+            this.Location_text.Size = new System.Drawing.Size(242, 20);
             this.Location_text.TabIndex = 7;
             // 
             // button
             // 
-            this.button.Location = new System.Drawing.Point(243, 244);
+            this.button.Location = new System.Drawing.Point(135, 233);
+            this.button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(75, 23);
+            this.button.Size = new System.Drawing.Size(66, 24);
             this.button.TabIndex = 8;
             this.button.Text = "Add";
             this.button.UseVisualStyleBackColor = true;
@@ -120,9 +130,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(368, 244);
+            this.button2.Location = new System.Drawing.Point(229, 233);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(66, 24);
             this.button2.TabIndex = 9;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
@@ -130,9 +141,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(490, 244);
+            this.button3.Location = new System.Drawing.Point(321, 233);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(66, 24);
             this.button3.TabIndex = 10;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
@@ -141,29 +153,43 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 277);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 138);
+            this.dataGridView1.Size = new System.Drawing.Size(582, 112);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(617, 244);
+            this.button4.Location = new System.Drawing.Point(416, 233);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(66, 24);
             this.button4.TabIndex = 21;
             this.button4.Text = "Menu";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label9.Location = new System.Drawing.Point(220, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(167, 27);
+            this.label9.TabIndex = 62;
+            this.label9.Text = "Pen Information";
+            // 
             // frm_Pen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 400);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
@@ -177,6 +203,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frm_Pen";
             this.Text = "frm_Pen";
             this.Load += new System.EventHandler(this.frm_Pen_Load);
@@ -201,5 +228,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label9;
     }
 }

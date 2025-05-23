@@ -19,10 +19,8 @@ namespace QuanLyChanNuoi
         LOPDUNGCHUNG lopchung  = new LOPDUNGCHUNG();
         private void frm_Animal_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'quanLyChanNuoi1DataSet1.Pen' table. You can move, or remove it, as needed.
-            this.penTableAdapter.Fill(this.quanLyChanNuoi1DataSet1.Pen);
-            // TODO: This line of code loads data into the 'quanLyChanNuoi1DataSet.Animal' table. You can move, or remove it, as needed.
-            this.animalTableAdapter.Fill(this.quanLyChanNuoi1DataSet.Animal);
+            LoadAnimal();
+            LoadPen();
 
         }
 
@@ -39,7 +37,6 @@ namespace QuanLyChanNuoi
             if (kq > 0)
             {
                 MessageBox.Show("Add Success");
-                this.animalTableAdapter.Fill(this.quanLyChanNuoi1DataSet.Animal);
             }
             else
             {
@@ -66,7 +63,6 @@ namespace QuanLyChanNuoi
             if (kq > 0)
             {
                 MessageBox.Show("Update Success");
-                this.animalTableAdapter.Fill(this.quanLyChanNuoi1DataSet.Animal);
             }
             else
             {
@@ -82,7 +78,6 @@ namespace QuanLyChanNuoi
             if (kq > 0)
             {
                 MessageBox.Show("Delete Success");
-                this.animalTableAdapter.Fill(this.quanLyChanNuoi1DataSet.Animal);
             }
             else
             {
@@ -110,6 +105,23 @@ namespace QuanLyChanNuoi
             Breed.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             Weight.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             cmb_PenID.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+        }
+        public void LoadPen()
+        {
+            string querryLoad_Pen = "SELECT * FROM Pen";
+            cmb_PenID.DataSource = lopchung.LayDLBang(querryLoad_Pen);
+            cmb_PenID.DisplayMember = "PenName";
+            cmb_PenID.ValueMember = "PenID";
+        }
+
+        private void Cmb_PenID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void btn_Menu_Click(object sender, EventArgs e)
+        {
 
         }
     }

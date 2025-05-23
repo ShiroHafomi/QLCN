@@ -35,7 +35,7 @@ namespace QuanLyChanNuoi
 
         private void frm_Pen_Load(object sender, EventArgs e)
         {
-
+            LoadPen();
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -70,7 +70,7 @@ namespace QuanLyChanNuoi
         }
         public void LoadPen()
         {
-            string sql = "SELECT * from Animal";
+            string sql = "SELECT * from Pen";
             dataGridView1.DataSource = LOPDUNGCHUNG.LayDLBang(sql);
         }
 

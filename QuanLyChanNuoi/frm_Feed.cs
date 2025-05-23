@@ -21,8 +21,7 @@ namespace QuanLyChanNuoi
 
         private void frm_Feed_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_QuanLyChanNuoi_Minn_DataSet.Feed' table. You can move, or remove it, as needed.
-            this.feedTableAdapter.Fill(this._QuanLyChanNuoi_Minn_DataSet.Feed);
+            LoadFeed();
 
         }
 

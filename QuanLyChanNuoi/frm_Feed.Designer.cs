@@ -44,17 +44,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Unit_Text = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._QuanLyChanNuoi_Minn_DataSet = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSet();
-            this.feedBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.feedTableAdapter = new QuanLyChanNuoi._QuanLyChanNuoi_Minn_DataSetTableAdapters.FeedTableAdapter();
-            this.feedIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.feedNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label4 = new System.Windows.Forms.Label();
+            this.feedBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,65 +185,12 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.feedIDDataGridViewTextBoxColumn,
-            this.feedNameDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.quantityDataGridViewTextBoxColumn,
-            this.unitDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.feedBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(63, 265);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(644, 123);
             this.dataGridView1.TabIndex = 41;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // _QuanLyChanNuoi_Minn_DataSet
-            // 
-            this._QuanLyChanNuoi_Minn_DataSet.DataSetName = "_QuanLyChanNuoi_Minn_DataSet";
-            this._QuanLyChanNuoi_Minn_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // feedBindingSource
-            // 
-            this.feedBindingSource.DataMember = "Feed";
-            this.feedBindingSource.DataSource = this._QuanLyChanNuoi_Minn_DataSet;
-            // 
-            // feedTableAdapter
-            // 
-            this.feedTableAdapter.ClearBeforeFill = true;
-            // 
-            // feedIDDataGridViewTextBoxColumn
-            // 
-            this.feedIDDataGridViewTextBoxColumn.DataPropertyName = "FeedID";
-            this.feedIDDataGridViewTextBoxColumn.HeaderText = "FeedID";
-            this.feedIDDataGridViewTextBoxColumn.Name = "feedIDDataGridViewTextBoxColumn";
-            this.feedIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // feedNameDataGridViewTextBoxColumn
-            // 
-            this.feedNameDataGridViewTextBoxColumn.DataPropertyName = "FeedName";
-            this.feedNameDataGridViewTextBoxColumn.HeaderText = "FeedName";
-            this.feedNameDataGridViewTextBoxColumn.Name = "feedNameDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "Description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Description";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            // 
-            // quantityDataGridViewTextBoxColumn
-            // 
-            this.quantityDataGridViewTextBoxColumn.DataPropertyName = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.HeaderText = "Quantity";
-            this.quantityDataGridViewTextBoxColumn.Name = "quantityDataGridViewTextBoxColumn";
-            // 
-            // unitDataGridViewTextBoxColumn
-            // 
-            this.unitDataGridViewTextBoxColumn.DataPropertyName = "Unit";
-            this.unitDataGridViewTextBoxColumn.HeaderText = "Unit";
-            this.unitDataGridViewTextBoxColumn.Name = "unitDataGridViewTextBoxColumn";
             // 
             // label4
             // 
@@ -264,11 +203,17 @@
             this.label4.TabIndex = 60;
             this.label4.Text = "Feed Information";
             // 
+            // feedBindingSource
+            // 
+            this.feedBindingSource.DataMember = "Feed";
+            // 
+            // 
+            // 
             // frm_Feed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(749, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Unit_Text);
@@ -289,7 +234,6 @@
             this.Text = "frm_Feed";
             this.Load += new System.EventHandler(this.frm_Feed_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._QuanLyChanNuoi_Minn_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -312,14 +256,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Unit_Text;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private _QuanLyChanNuoi_Minn_DataSet _QuanLyChanNuoi_Minn_DataSet;
         private System.Windows.Forms.BindingSource feedBindingSource;
-        private _QuanLyChanNuoi_Minn_DataSetTableAdapters.FeedTableAdapter feedTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn feedIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn feedNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn quantityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label4;
     }
 }

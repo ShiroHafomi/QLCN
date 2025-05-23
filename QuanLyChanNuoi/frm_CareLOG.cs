@@ -24,12 +24,10 @@ namespace QuanLyChanNuoi
 
         private void frm_CareLOG_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_QuanLyChanNuoi_TranThanhTri_DataSet2.Staff' table. You can move, or remove it, as needed.
-            this.staffTableAdapter.Fill(this._QuanLyChanNuoi_TranThanhTri_DataSet2.Staff);
-            // TODO: This line of code loads data into the '_QuanLyChanNuoi_TranThanhTri_DataSet1.Animal' table. You can move, or remove it, as needed.
-            this.animalTableAdapter.Fill(this._QuanLyChanNuoi_TranThanhTri_DataSet1.Animal);
-            // TODO: This line of code loads data into the '_QuanLyChanNuoi_TranThanhTri_DataSet.Carelog' table. You can move, or remove it, as needed.
-            this.carelogTableAdapter.Fill(this._QuanLyChanNuoi_TranThanhTri_DataSet.Carelog);
+            LoadCareLog();
+            LoadStaff();
+            LoadAnimal();
+
 
         }
 
@@ -92,6 +90,20 @@ namespace QuanLyChanNuoi
             cmb_Staff_Name.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             CareDate_Text.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             Desciption_Text.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+        }
+        public void LoadStaff()
+        {
+            string querryLoad_Staff = "SELECT * FROM Staff";
+            cmb_Staff_Name.DataSource = lopchung.LayDLBang(querryLoad_Staff);
+            cmb_Staff_Name.DisplayMember = "FullName";
+            cmb_Staff_Name.ValueMember = "StaffID";
+        }
+        public void LoadAnimal()
+        {
+            string querryLoad_Animal = "SELECT * FROM Animal";
+            cmb_Animal_Name.DataSource = lopchung.LayDLBang(querryLoad_Animal);
+            cmb_Animal_Name.DisplayMember = "Name";
+            cmb_Animal_Name.ValueMember = "AnimalID";
         }
     }
 }

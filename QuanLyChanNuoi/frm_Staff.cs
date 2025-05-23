@@ -22,8 +22,7 @@ namespace QuanLyChanNuoi
 
         private void frm_Staff_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the '_QuanLyChanNuoi_TranThanhTri_DataSet3.Staff' table. You can move, or remove it, as needed.
-            this.staffTableAdapter.Fill(this._QuanLyChanNuoi_TranThanhTri_DataSet3.Staff);
+            LoadStaff();
 
         }
 

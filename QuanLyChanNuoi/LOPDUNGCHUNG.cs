@@ -12,7 +12,7 @@ namespace QuanLyChanNuoi
         SqlConnection conn;
         public LOPDUNGCHUNG()
         {
-            string chuoikn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\minh\C#\BAINHOMNET\QuanLyChanNuoi\QuanLyChanNuoi(Minn).mdf;Integrated Security=True";
+            string chuoikn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\minh\C#\bainhom\QuanLyChanNuoi\QuanLyChanNuoi.mdf;Integrated Security=True";
             conn = new SqlConnection(chuoikn);
         }
         public int ChucNang(string sql)
